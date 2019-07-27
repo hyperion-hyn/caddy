@@ -20,3 +20,6 @@ og_static/
 .vscode/
 
 *.bat
+
+vendor/
+
