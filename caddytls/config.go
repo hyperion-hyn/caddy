@@ -93,6 +93,10 @@ type Config struct {
 	tlsConfig *tls.Config
 }
 
+func (c *Config) SetKeyless(keylessConf *tls.Config) {
+	c.tlsConfig = keylessConf
+}
+
 // NewConfig returns a new Config with a pointer to the instance's
 // certificate cache. You will usually need to set other fields on
 // the returned Config for successful practical use.
