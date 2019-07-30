@@ -40,6 +40,9 @@ import (
 
 	_ "github.com/caddyserver/caddy/caddyhttp" // plug in the HTTP server type
 	// This is where other plugins get plugged in (imported)
+	_ "github.com/BTBurke/caddy-jwt"
+	_ "github.com/nicolasazrak/caddy-cache"
+	_ "github.com/hyperion-hyn/caddy-cron"
 )
 
 func init() {
