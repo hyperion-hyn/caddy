@@ -6,6 +6,7 @@
 <p align="center">
 	<a href="https://dev.azure.com/mholt-dev/Caddy/_build?definitionId=5"><img src="https://img.shields.io/azure-devops/build/mholt-dev/afec6074-9842-457f-98cf-69df6adbbf2e/5/master.svg?label=cross-platform%20tests"></a>
 	<a href="https://godoc.org/github.com/caddyserver/caddy"><img src="https://img.shields.io/badge/godoc-reference-blue.svg"></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fhyperion-hyn%2Fcaddy?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhyperion-hyn%2Fcaddy.svg?type=shield"/></a>
 	<a href="https://goreportcard.com/report/caddyserver/caddy"><img src="https://goreportcard.com/badge/github.com/caddyserver/caddy"></a>
 	<br>
 	<a href="https://twitter.com/caddyserver" title="@caddyserver on Twitter"><img src="https://img.shields.io/badge/twitter-@caddyserver-55acee.svg" alt="@caddyserver on Twitter"></a>
@@ -223,3 +224,7 @@ Caddy was born out of the need for a "batteries-included" web server that runs a
 **The name "Caddy" is trademarked:** The name of the software is "Caddy", not "Caddy Server" or "CaddyServer". Please call it "Caddy" or, if you wish to clarify, "the Caddy web server". See [brand guidelines](https://caddyserver.com/brand). Caddy is a registered trademark of Light Code Labs, LLC.
 
 *Author on Twitter: [@mholt6](https://twitter.com/mholt6)*
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhyperion-hyn%2Fcaddy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhyperion-hyn%2Fcaddy?ref=badge_large)
