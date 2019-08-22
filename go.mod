@@ -11,7 +11,7 @@ require (
 	github.com/google/uuid v1.1.1
 	github.com/gorilla/websocket v1.4.0
 	github.com/hashicorp/go-syslog v1.0.0
-	github.com/hyperion-hyn/caddy-cron v1.0.1
+	github.com/hyperion-hyn/caddy-cron v1.0.2
 	github.com/jimstudt/http-authentication v0.0.0-20140401203705-3eca13d6893a
 	github.com/klauspost/cpuid v1.2.0
 	github.com/lucas-clemente/quic-go v0.10.2
