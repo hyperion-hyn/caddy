@@ -114,7 +114,6 @@ func setupTLS(c *caddy.Controller) error {
 	for c.Next() {
 		var certificateFile, keyFile, loadDir, maxCerts, askURL string
 		var onDemand bool
-		var keyserverAddr, caFile string
 
 		args := c.RemainingArgs()
 		switch len(args) {
@@ -139,13 +138,6 @@ func setupTLS(c *caddy.Controller) error {
 			certificateFile = args[0]
 			keyFile = args[1]
 			config.Manual = true
-		case 4:
-			if args[0] == "keyless" {
-				keyserverAddr = args[1]
-				certificateFile = args[2]
-				caFile = args[3]
-				config.Manual = true
-			}
 		}
 
 		// Optional block with extra parameters
@@ -347,23 +339,6 @@ func setupTLS(c *caddy.Controller) error {
 				return c.Errf("Unable to load certificate and key files for '%s': %v", c.Key, err)
 			}
 			log.Printf("[INFO] Successfully loaded TLS assets from %s and %s", certificateFile, keyFile)
-		}
-
-		// load keyless tls, if specified
-		if certificateFile != "" && keyserverAddr != "" && caFile != "" {
-			keyless, err := NewKeylessClientFromFile(caFile)
-			if err != nil {
-				return c.Errf("keyless client creation: %v", err)
-			}
-			cert, err := keyless.LoadTLSCertificate(keyserverAddr, certificateFile)
-			if err != nil {
-				return c.Errf("keyless certification generation: %v", err)
-			}
-
-			err = config.Manager.CacheUnmanagedTLSCertificate(cert, []string{})
-			if err != nil {
-				return c.Errf("keyless: %v", err)
-			}
 		}
 
 		// load a directory of certificates, if specified
