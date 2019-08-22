@@ -43,6 +43,7 @@ import (
 	"github.com/mholt/certmagic"
 	_ "github.com/nicolasazrak/caddy-cache"
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"
+	_ "github.com/hyperion-hyn/caddy-plugins/pkg/keyless/client"
 )
 
 func init() {
