@@ -4,6 +4,7 @@ go 1.12
 
 require (
 	github.com/BTBurke/caddy-jwt v3.7.1+incompatible
+	github.com/captncraig/caddy-realip v0.0.0-20190710144553-6df827e22ab8
 	github.com/cloudflare/backoff v0.0.0-20161212185259-647f3cdfc87a
 	github.com/cloudflare/cfssl v0.0.0-20190726000631-633726f6bcb7
 	github.com/cloudflare/gokeyless v0.0.0-20190523172003-c0b7c67ea231
@@ -18,6 +19,7 @@ require (
 	github.com/hyperion-hyn/caddy-cron v1.0.1
 	github.com/jimstudt/http-authentication v0.0.0-20140401203705-3eca13d6893a
 	github.com/klauspost/cpuid v1.2.0
+	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/lucas-clemente/quic-go v0.10.2
 	github.com/lziest/ttlcache v0.0.0-20160918175801-3c85255853f2
 	github.com/mholt/certmagic v0.6.2-0.20190624175158-6a42ef9fe8c2
